@@ -1,0 +1,141 @@
+.grid-container-main {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 2px;
+}
+
+.grid-container-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #cbeee0;
+  padding: 2px;
+  margin-right: 20px;
+  width: 70%;
+
+}
+
+.grid-container-bill {
+  display: grid;
+  grid-template-columns: auto ;
+  background-color: #b3ddff;
+  padding: 2px;
+  text-align: center;
+  width: 70%;
+}
+.grid-item-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.delete-btn {
+  background-color: rgba(255, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+
+}
+
+
+
+.grid-item-bill {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.item-btn {
+    font-size: 18px;
+    color: white;
+    background-color: rgb(39, 194, 49);
+    height: 50px;
+    margin: 8px 
+    
+}
+
+.paid-field {
+    margin-top: 12px;
+    margin-right: 10px;
+    margin-left: 15px;
+    height:40px;
+    font-size: 20px;
+}
+
+.paid-btn {
+  background-color: rgba(0, 174, 3, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  margin-top: 12px;
+  font-size: 16px;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  color: white;
+
+}
+
+.paid-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.warning {
+    color: red
+}
+
+
+.done-btn {
+  background-color: rgba(17, 0, 174, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  margin-top: 12px;
+  margin-left: 40px;
+  font-size: 16px;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  color: white;
+
+}
+
+.item-all-sales {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  width: 75%;
+}
+
+.item-all-sales:hover{
+  background-color: rgb(217, 217, 208);
+}
+
+.item-all-sales:active{
+  background-color: rgba(217, 217, 208, 0.708);
+}
+
+.wrap
+{
+width: 100%;
+overflow:auto;
+padding:2px;
+}
+.fleft 
+{
+float:left; 
+width: 50%;
+}
+.fright
+{
+float: right;
+width: 50%;
+
+}
