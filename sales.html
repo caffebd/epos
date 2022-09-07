@@ -4,14 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
     <title>Sales Overview</title>
 </head>
 <body>
     <div class="wrap">
     <div class="fleft">
+      <a href="/">Home</a>
       <h2>Sales</h2>
-        <a href="/">Home</a>
-      <div id="daily-sales">
+       <input  id="date-picker"></input>
+      <h3 id="date-area">Date:</h3>
+     
+      <div id="daily-sales" class="daily-sales-style">
 
         </div>
           
@@ -28,7 +33,31 @@
   </div>
 
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    <script src="script.js"></script>  
+<script>flatpickr("#date-picker", {
+    defaultDate: new Date(),
+    dateFormat: "d F Y",
+    onChange: function(selectedDates, dateStr, instance) {
+           dateChanged(selectedDates, dateStr, instance)
+    },
+    
+
+    onOpen: [
+        function(selectedDates, dateStr, instance){
+            //...
+        },
+        function(selectedDates, dateStr, instance){
+            //...
+        }
+    ],
+    onClose: function(selectedDates, dateStr, instance){
+       // ...
+    }
+}
+);</script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <!-- <script src="script.js"></script>   -->
 </body>
 </html>

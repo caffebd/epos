@@ -4,12 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
+
     <title>CAFFE ePOS</title>
 </head>
 <body>
     <div class="wrap">
 <div class="fleft">
-      <h2>Products</h2>
+    <a href="/sales.html">Overview</a>
+      <h2 id="date-area">Date:</h2>
+
       <h3 id="sale-count">Sale Number: 1</h3>
       <div class="grid-container-buttons" id="sale-buttons">
           
@@ -18,7 +21,7 @@
       </div>
   
   <br>
-  <a href="/sales.html">Overview</a>
+
   </div>
   <div class="fright">
   <div class="grid-container-bill" id="bill-area">
@@ -37,6 +40,13 @@
  
   </div>
 
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
 <!-- <script src="script.js"></script>   -->
 <script src="learn.js"></script>    
 </body>
