@@ -29,6 +29,7 @@
   font-size: 20px;
   text-align: center;
 
+
 }
 
 .delete-btn {
@@ -37,6 +38,7 @@
   padding: 5px;
   font-size: 10px;
   text-align: center;
+  margin-left: 10px;
   color: white;
 
 }
@@ -49,14 +51,15 @@
   padding: 10px;
   font-size: 20px;
   text-align: left;
+
 }
 
 .item-btn {
     font-size: 18px;
     color: white;
-    background-color: rgb(39, 194, 49);
-    height: 50px;
-    margin: 8px 
+    background-color: rgb(10, 130, 18);
+    margin: 10px;
+    padding-bottom: 10px;
     
 }
 
@@ -69,7 +72,7 @@
 }
 
 .paid-btn {
-  background-color: rgba(0, 174, 3, 0.8);
+  background-color: rgba(32, 0, 174, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 2px;
   margin-top: 12px;
@@ -106,6 +109,26 @@
   width: 80px;
   height: 40px;
   color: white;
+
+}
+
+.sign-out-btn {
+  background-color: rgba(174, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  margin-top: 52px;
+  margin-left: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  color: white;
+
+}
+
+.sign-out-btn:hover {
+  background-color: rgba(224, 31, 31, 0.8);
+
 
 }
 
