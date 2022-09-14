@@ -317,20 +317,26 @@ function saleItemClicked(purchases, total) {
 function setupButtons() {
   for (let i = 0; i < allButtons.length; i++) {
     let itemBtn = buttonArea.appendChild(document.createElement("button"));
-    itemBtn.innerHTML = allButtons[i].name;
+    //itemBtn.innerHTML = allButtons[i].name;
 
-   
     itemBtn.onclick = function (event) {
       buyItem(allButtons[i]);
     };
 
     itemBtn.className = "item-btn";
-    itemBtn.appendChild(document.createElement("br"))
+    
+    //itemBtn.appendChild(document.createElement("br"))
 
     let imageBox = itemBtn.appendChild(document.createElement("img"));
     imageBox.src = allButtons[i].img;
     imageBox.style.height = "100px";
     imageBox.style.width = "100px";
+
+    let nameBox = itemBtn.appendChild(document.createElement("p"));
+    nameBox.innerHTML = allButtons[i].name;
+
+
+
   }
 
   saleCount.innerHTML = `Sale Number ${allPurchases.length + 1}`;
